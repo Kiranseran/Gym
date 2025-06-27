@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sennett Gym</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header nav a {
+      color: #ddd;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    header nav a:hover {
+      color: white;
+    }
+    section {
+      padding: 4rem 2rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero button {
+      padding: 1rem 2rem;
+      background-color: #e67e22;
+      color: white;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #cf711f;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .features, .products, .benefits, .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .testimonial img {
+      width: 60px;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      padding: 0.75rem 1.5rem;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #21618c;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>Sennett Gym</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#map">How to get here</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Get Fit. Stay Strong. Be Unstoppable.</h1>
+  <p>Join Sennett Gym today and transform your life.</p>
+  <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Join Now</button>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Sennett Gym</h2>
+  <p>At Sennett Gym, we believe in empowering individuals to reach their fitness goals. Established in the heart of Singapore, our mission is to provide a safe, welcoming, and results-driven environment for all fitness enthusiasts — whether you're a beginner or a seasoned athlete.</p>
+  <div class="features">
+    <div class="card">State-of-the-art equipment</div>
+    <div class="card">Certified personal trainers</div>
+    <div class="card">Wide variety of group classes</div>
+    <div class="card">Nutrition and wellness coaching</div>
+  </div>
+</section>
+
+<section id="products">
+  <h2 class="section-title">Our Offerings</h2>
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1583454110551-f3dd2b1ed3cc" alt="Personal Training">
+      <h3>Personal Training</h3>
+      <p>Customized programs to meet your goals with 1-on-1 coaching.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594737625785-c902f0b0e253" alt="Group Classes">
+      <h3>Group Classes</h3>
+      <p>HIIT, yoga, spinning, and more to keep you engaged and motivated.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1618572954632-ff77c3be1f2e" alt="Nutrition Plans">
+      <h3>Nutrition Guidance</h3>
+      <p>Get expert advice and meal plans tailored to your fitness needs.</p>
+    </div>
+  </div>
+</section>
+
+<section id="benefits">
+  <h2 class="section-title">Why Choose Us?</h2>
+  <div class="benefits">
+    <div class="card">Flexible membership plans</div>
+    <div class="card">Clean and spacious facilities</div>
+    <div class="card">Friendly and supportive community</div>
+    <div class="card">Convenient central location</div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2 class="section-title">What Our Members Say</h2>
+  <div class="testimonials">
+    <div class="card testimonial">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+      <p>"Sennett Gym helped me lose 10kg and feel confident again!"</p>
+      <strong>- Sarah T.</strong>
+    </div>
+    <div class="card testimonial">
+      <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="David">
+      <p>"The trainers are top-notch and always push me to do my best."</p>
+      <strong>- David L.</strong>
+    </div>
+    <div class="card testimonial">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria">
+      <p>"I love the variety of classes. There's something for everyone!"</p>
+      <strong>- Maria W.</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+  <p>Have questions or ready to sign up? Drop us a message!</p>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required/>
+    <input type="email" placeholder="Your Email" required/>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<section id="map">
+  <h2 class="section-title">How to Get Here</h2>
+  <p>We are located at 2 Lorong Bunga, Singapore 348701.</p>
+  <p><strong>Directions:</strong> Take the MRT to Potong Pasir Station (NE10). Exit via Exit A and walk about 8 minutes to our gym.</p>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.771504563482!2d103.86725827576774!3d1.3320710616125038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1706e73ecddf%3A0x9d6dcdd7aaebaf69!2s2%20Lorong%20Bunga%2C%20Singapore%20348701!5e0!3m2!1sen!2ssg!4v1719473913243!5m2!1sen!2ssg"
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<footer>
+  <p>&copy; 2025 Sennett Gym. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
